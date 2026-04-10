@@ -18,5 +18,5 @@ for model in "${models[@]}"; do
     --model_path "../core_models/uranium/models/${model}.xml" \
     --compress true \
     --remove_infeasible false \
-    --out_path "../core_models/uranium/${model%_ex}_full_conversions_ex_compress.csv"
+    --out_path "../core_models/uranium/results/${model%_ex}_full_conversions_ex_compress.csv"
 done

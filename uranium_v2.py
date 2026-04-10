@@ -3,9 +3,9 @@
 
 
 import cobra
-import efmtool
+#import efmtool
 import numpy as np
-import pandas as pd
+#import pandas as pd
 
 cobra_config = cobra.Configuration()
 cobra_config.solver = "cplex"
