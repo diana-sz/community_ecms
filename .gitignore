@@ -5,3 +5,4 @@ results/*
 !results/filtered_ecms_*.csv
 !results/*_full_conversions.csv
 __pycache__/
+!results/pycomo_*.csv
