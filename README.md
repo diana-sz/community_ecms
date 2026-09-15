@@ -1,6 +1,6 @@
 # Community elementary conversion modes — uranium-reducing community
 
-Computes elementary conversion modes (ECMs) for each species at a fixed growth rate, then combines them into elementary community modes (ECMMs) that describe feasible community compositions and exchange patterns.
+Computes elementary conversion modes (ECMs) for each species at a fixed growth rate, then combines them into elementary community modes that describe feasible community compositions.
 
 **Step 1: Build ecmtool inputs** (`make_ecmtool_inputs.ipynb`)
 * For each species (Geobacter, Rhodoferax) and each exchange pattern, restrict exchanges to the pattern's allowed uptakes/secretions and calculate the max growth rate.
