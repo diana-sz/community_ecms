@@ -55,12 +55,12 @@ models=(
 "Rhodoferax_mU_1_0.11.xml"
 )
 for model in "${models[@]}"; do
-  out="../core_models/uranium/results/${model%.xml}_full_conversions.csv"
+  out="../uranium/results/${model%.xml}_full_conversions.csv"
   if [ -f "$out" ]; then
     echo "Skipping ${model}: output already exists"
   else
     python main.py \
-      --model_path "../core_models/uranium/models/${model}" \
+      --model_path "../uranium/models/${model}" \
       --compress true \
       --remove_infeasible false \
       --tag 761 \
@@ -118,12 +118,12 @@ models=(
 "Geobacter_mU_1_0.11.xml"
 )
 for model in "${models[@]}"; do
-  out="../core_models/uranium/results/${model%.xml}_full_conversions.csv"
+  out="../uranium/results/${model%.xml}_full_conversions.csv"
   if [ -f "$out" ]; then
     echo "Skipping ${model}: output already exists"
   else
     python main.py \
-      --model_path "../core_models/uranium/models/${model}" \
+      --model_path "../uranium/models/${model}" \
       --compress true \
       --remove_infeasible false \
       --tag 523 \
