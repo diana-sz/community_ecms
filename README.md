@@ -9,15 +9,16 @@ Computes elementary conversion modes (ECMs) for each species at a fixed growth r
 
 **Step 2: Compute ECMs** (`run_models_ecmtool.sh`)
 Runs ecmtool on each SBML file to compute the full conversion cone.
+Note: this script has to be executed from the ecmtool folder that contains main.py and the path has to be updated so that it finds the models.
 
 **Step 3: Filter ECMs and compute community modes** (`analyze_ecms.ipynb`)
 * Filter ECMs down to the ones matching the pattern's cross-feeding scenario.
 * Combine both species' filtered ECMs into one matrix and run efmtool on it. The resulting EFMs are the elementary community modes - combinations of Geobacter and Rhodoferax ECMs - from which community composition (relative contribution of each species) is calculated.
 
-**Step 4: Calculate composition ranges with PyCoMo** (`uranium_pycomo_v2.ipynb`)
+**Step 4: Calculate composition ranges with PyCoMo** (`get_pycomo_composition.ipynb`)
 *  uses PyCoMo package to calculate the composition ranges with FVA.
 
-**Step 5: Plot composition ranges calculated with elementary modes / PyCoMo** (`analyse_deltas.ipynb`)
+**Step 5: Plot composition ranges calculated with elementary modes / PyCoMo** (`analyze_composition.ipynb`)
 Compares the composition ranges from Step 3 against independently computed PyCoMo composition ranges, and checks per-species biomass/product yields.
 
 **Toy example** (`toy_example.ipynb`)
